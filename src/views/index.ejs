@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title><%=title%></title>
+		<meta name="generator" content="Bootply" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="css/styles.css" rel="stylesheet">
+	</head>
+	<body>
+    <!-- navbar start -->
+<header class="navbar navbar-bright navbar-fixed-top" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+    </div>
+    <nav class="collapse navbar-collapse" role="navigation" >
+      <ul class="nav navbar-nav">
+        
+        <h1 style="font-size: 60px;">Library App</h1>
+      </ul>
+      <ul class="nav navbar-right navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-search"></i></a>
+          <ul class="dropdown-menu" style="padding:12px;">
+            <form class="form-inline">
+              <button type="submit" class="btn btn-default pull-right"><i class="glyphicon glyphicon-search"></i></button><input type="text" class="form-control pull-left" placeholder="Search">
+            </form>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!-- navbar end -->
+
+<div class="container"   id="footer">
+  <div class="row">
+    <div style="background-color: rgba(3, 5, 32, 0.719);margin-top: 6%;padding: 4%;" class="col col-sm-12 ">
+      
+      
+      <div style="margin-left: 4%;" class="btn-group">
+        <h3 style="color: white;font-size: 80px;font-size: 35px;margin-top: 8%;margin-bottom: 3%;">Welcome To Library App</h3><br>
+        
+        <%for(i=0;i<links.length;i++){%>
+      <a  style="margin-right: 10px; height: 50px;width: 100px;border: 2px solid white;" class="btn btn-twitter btn-lg" href="<%=links[i].link%>"><i class=" icon-large"></i> <%=links[i].name%></a>
+      <%}%>
+      
+  </div>
+  
+      <br><br>
+      <div style="float: right;">
+          <p style="color: white;font-size: 16px;"><b style="font-size: 30px;"> “</b>“To learn to read is to light a fire; every syllable that is spelled out is a spark.”<b style="font-size: 30px;">”</b>
+
+            <br><span >- Victor Hugo</span>  </p><br>
+            <p style="color: white;font-size: 16px;"><b style="font-size: 30px;"> “</b>“If there’s a book that you want to read, but it hasn’t been written yet, then you must write it.” <b style="font-size: 30px;">”</b>
+
+                <br><span>– Toni Morrison</span>  </p><br>
+                <p style="color: white;font-size: 16px;"><b style="font-size: 30px;"> “</b>“There is no friend as loyal as a book.”<b style="font-size: 30px;">”</b>
+
+                    <br><span >- Ernest Hemingway</span>  </p><br>
+                    <p style="color: white;font-size: 16px;"><b style="font-size: 30px;"> “</b>“Books are a uniquely portable magic.” <b style="font-size: 30px;">”</b>
+
+                      <br><span >— Stephen King</span>  </p><br>
+                    <br>
+      </div>
+      
+      
+    </div>
+  </div>
+</div>
+
+
+<!-- footer start -->
+<footer  id="ftcolor" style="margin-top: 6%;">
+  <div class="container" >
+    <div class="row">
+      <div class="col-sm-6">
+        <ul class="list-inline">
+          <li><i class="icon-facebook icon-2x"></i></li>
+          <li><i class="icon-twitter icon-2x"></i></li>
+          <li><i class="icon-google-plus icon-2x"></i></li>
+        </ul>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+<!-- footer end -->
+	<!-- script references -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>
